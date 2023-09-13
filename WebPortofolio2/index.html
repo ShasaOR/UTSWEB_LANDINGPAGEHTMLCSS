@@ -25,10 +25,9 @@
 
         <nav class="navbar">
             <a href="#home">home</a>
-            <a href="#spesial">spesial</a>
+            <a href="#speciality">spesial</a>
             <a href="#populer">populer</a>
-            <a href="#galeri">galeri</a>
-            <a href="#review">review</a>
+            <a href="#gallery">galeri</a>
             <a href="#order">order</a>
         </nav>
     </header>
@@ -299,7 +298,25 @@
 
 
   <!-- custom js file link -->
-   <script src="js/script.js"></script>>
+   <script>
+    let menu = document.querySelector('#menu-bar');
+    let navbar = document.querySelector('.navbar');
+
+    menu.onclick = () =>{
+
+    menu.classList.toggle('fa-times');
+    navbar.classList.toggle('active');
+
+}
+
+    window.onscroll = () =>{
+
+    menu.classList.remove('fa-times');
+    navbar.classList.remove('active');
+    
+}   
+
+   </script>>
     
 </body>
 </html>
